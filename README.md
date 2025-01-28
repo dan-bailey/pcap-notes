@@ -47,9 +47,28 @@ https://www.udemy.com/course/python-pcap/
     * ```sqrt()``` square root -- always returns float
     * ```hypot(x, y)``` find longest side of a right triangle, if you know length of short sides
 * random module
-
-* further stuff on random.sample
+    * how randomness is achieved (it's pseudorandom)
+    * algorithmic generation
+    * needs a seed, same # = same results
+    * uses current time for seed
+    * ```random.random()``` generates a float between 0 and 1
+    * need to know: ```choice``` and ```sample```
+    * random.choice(list) -- selects an item from list (picks unique indexes, not unique values from the list)
+    * random.sample(list, number) -- picks number of items from a list, returns a new list
 * platform module
+    * access to underlying platform's underlying data
+    * info re: hardware, python, OS, etc. Layers:
+        * your code
+        * python
+        * operating system
+        * hardware
+    * ```.platform()``` -- identifies underlying platform 
+    * ```.machine()``` -- returns processor name
+    * ```.processor()``` -- specific name
+    * ```.system()``` -- generic OS name
+    * ```.python_implementation()``` -- which implementation
+    * ```.python_version_tuple()``` -- returns tuple (major py version, minor, patch)
 * creating your own
+    
 * module locations
 * using packages
